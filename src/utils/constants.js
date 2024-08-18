@@ -8,7 +8,7 @@ export const USER_AVATAR =
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzYzYxMjA0MjJmYjg4OTQyOThjODI2NjZmNzcyYWI4MSIsIm5iZiI6MTcyMzkwNTE3Ni44NDE3ODQsInN1YiI6IjY2YzBiMmU2YWZkOTNhODNmNjE2YWFiYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.UEAeD6IAUN4zC1lUUCtOsurlQrJRGTcMXJ31hqH6qqw'
+      Authorization: process.env.bearer
     }
   };
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
@@ -22,4 +22,4 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "spanish", name: "Spanish" },
 ];
 
-export const OPENAI_KEY = "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";
+export const OPENAI_KEY = process.env.api;
